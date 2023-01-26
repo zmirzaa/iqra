@@ -21,3 +21,19 @@ def register():
     session['user_id'] = id 
     return redirect('/')
 
+
+@app.route('/contact') 
+def contact(): 
+    return render_template("contact.html")
+
+@app.route('/curriculum') 
+def curriculum(): 
+    return render_template("curriculum.html")
+
+@app.route('/mission') 
+def mission(): 
+    return render_template("mission.html")
+
+@app.route('/newsletter') 
+def newsletter(): 
+    return render_template("newsletter.html")
